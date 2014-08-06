@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebRTC Chat Demo</title>
+    <!-- Bootstrap for general layout and styling -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- DataChannel.js for WebRTC functionality -->
+    <script src="DataChannel.js"></script>
+    <script src="bower_components/requirejs/require.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <header class="col-md-12">
+            <h3>WebRTC Chat Demo</h3>
+        </header>
+    </div>
+
+    <div class="row">
+        <section class="col-md-4">
+            <hr>
+            <h2>Getting started</h2>
+            <ol>
+                <li>Type a channel name and click <strong>create</strong></li>
+                <li>Another ppl Type the same channel name and click <strong>join</strong>
+                </li>
+                <li>Wait a moment and start chatting!</li>
+            </ol>
+        </section>
+        <section class="col-md-8">
+            <!-- The chat room widget -->
+            <div data-weave="rtc-chat/widget/chat/main" class="demo"></div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
