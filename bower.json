@@ -8,20 +8,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "troopjs-core": "",
-    "troopjs-opt": "",
-    "troopjs-contrib-browser": "",
-    "troopjs-net": "",
-    "troopjs-data": "",
-    "troopjs-requirejs": "",
-    "requirejs": "^2",
-    "requirejs-mustache": "",
-    "mustache": "~0.8.2",
-    "requirejs-text": "~2.0.12"
-  },
-  "maps": {
-    "*": {
-      "stache": "requirejs-mustache/stache"
-    }
+    "react": "~0.11.1"
   }
 }

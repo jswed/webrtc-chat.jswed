@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebRTC Chat Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>WebRTC Chat App</title>
     <!-- Bootstrap for general layout and styling -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- React.js and JSX compiler in browser -->
+    <script src="bower_components/react/react-with-addons.js"></script>
+    <script src="bower_components/react/JSXTransformer.js"></script>
     <!-- DataChannel.js for WebRTC functionality -->
     <script src="DataChannel.js"></script>
-    <script src="bower_components/requirejs/require.js"></script>
-    <script src="main.js"></script>
+    <script type="text/jsx" src="main.js"></script>
 </head>
 <body>
 <div class="container">
@@ -30,8 +34,7 @@
             </ol>
         </section>
         <section class="col-md-8">
-            <!-- The chat room widget -->
-            <div data-weave="rtc-chat/widget/chat/main" class="demo"></div>
+            <div id="app" class="demo"></div>
         </section>
     </div>
 </div>
